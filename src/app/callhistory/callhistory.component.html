@@ -1,0 +1,27 @@
+<h1>Your call history</h1>
+<hr>
+<table id="users">
+    <thead>
+        <tr>
+            <th *ngFor=" let header of callhistoryheader">
+                {{header}}
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor=" let callh of callhistory">
+            <td>
+                {{callh['idoperateur']}}
+            </td>
+            <td>
+                {{callh['tel']}}
+            </td>
+            <td>
+                {{callh['duree']}}
+            </td>
+            <td>
+                {{callh['dateappel']}}
+            </td>
+        </tr>
+    </tbody>
+</table>

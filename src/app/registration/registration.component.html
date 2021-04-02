@@ -1,0 +1,24 @@
+<form #f="ngForm" (ngSubmit)="onSubmit(f)"> 
+    <mat-card>
+      <mat-card-header class="titre">
+        <h1>Registration</h1>
+      </mat-card-header>
+      <mat-card-content>
+        <div class="row">
+            <input class="input" type="text"  placeholder="Name" ngModel name="nom">
+        </div>
+        <div class="row">
+          <input class="input" type="text"  placeholder="Firstname" ngModel name="prenom">
+        </div>
+        <div class="row">
+          <input class="input" type="text"  placeholder="new Phone number" ngModel name="tel">
+        </div>
+        <div class="row">
+            <input class="input" type="password" placeholder="Password" ngModel name="mdp">
+        </div>
+        <div class="row">
+            <button id="but" type="submit">Signup</button>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </form>
